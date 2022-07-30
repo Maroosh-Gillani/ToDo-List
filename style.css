@@ -23,7 +23,37 @@
  }
 
 header {
-   padding: 2rem 1rem; /*what is rem*/
-   max-width: 800px;
+   padding: 2rem 1rem;
+   /*max-width: 800px;*/
    margin: 0 auto;
+}
+
+header h1 {
+   font-size: xxx-large;
+   color: var(--lightgray);
+   padding-bottom: 0.5rem;
+}
+
+#add-activity-form {
+   display: flex;
+}
+
+input, button {
+   appearance: none;
+   background: none;
+   border: none;
+   outline: none;
+}
+
+#add-activity-input {
+   background-color: var(--darkergray);
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   margin-right: 1rem;
+   color: var(--gray);
+}
+
+#add-activity-submit {
+   color: var(--teal);
+   cursor: pointer;
 }
