@@ -1,0 +1,29 @@
+ :root {
+    --lightgray: #d5e8ed;
+    --gray: #8daab3;
+    --darkgray: #475559;
+    --darkergray: #1b2426;
+
+    --teal: #38c8e8;
+    --redpink: #e83861;
+ }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--darkgray);
+    color: white;
+ }
+
+header {
+   padding: 2rem 1rem; /*what is rem*/
+   max-width: 800px;
+   margin: 0 auto;
+}
