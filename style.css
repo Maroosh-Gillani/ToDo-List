@@ -57,3 +57,36 @@ input, button {
    color: var(--teal);
    cursor: pointer;
 }
+
+#add-activity-submit:hover {
+   opacity: 0.5
+}
+
+main {
+   padding: 2rem 1rem;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.todo-list {
+   padding: 1rem;
+}
+
+.todo-list h2 {
+   font-size: x-large;
+   color: var(--lightgray);
+}
+
+#tasks .task {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--darkergray);
+   padding: 0.25rem;
+   border-radius: 0.5rem;
+   margin-top: 0.5rem;
+   color: var(--gray);
+}
+
+#tasks .task .content .text {
+   color: var(--gray); 
+} 
