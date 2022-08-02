@@ -18,13 +18,14 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--darkgray);
+    background: linear-gradient(var(--darkergray), var(--darkgray));
     color: white;
  }
 
 header {
    padding: 2rem 1rem;
-   /*max-width: 800px;*/
+   max-width: 800px;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -46,6 +47,7 @@ input, button {
 }
 
 #add-activity-input {
+   flex: 1 1 0%;
    background-color: var(--darkergray);
    padding: 0.5rem;
    border-radius: 0.5rem;
@@ -63,8 +65,9 @@ input, button {
 }
 
 main {
-   padding: 2rem 1rem;
+   flex: 1 1 0%;
    max-width: 800px;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -88,11 +91,22 @@ main {
 }
 
 #tasks .task .content .text {
-   color: var(--gray); 
+   color: var(--gray);
+   width: 100%;
+   display: block; 
 } 
 
+#tasks .task .content .text:not(:read-only) {
+   color:aqua;
+}
+
+#tasks .task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
 #tasks .task .actions button {
-   cursor: pointer
+   cursor: pointer;
 }
 
 #tasks .task .actions button:hover {
@@ -105,4 +119,8 @@ main {
 
 #tasks .task .actions .remove {
    color: var(--redpink)
+}
+
+#tasks .task .content {
+   flex: 1 1 0%
 }
