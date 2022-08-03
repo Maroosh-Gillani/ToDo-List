@@ -58,6 +58,10 @@ window.addEventListener('load', () => {
                 activity_input_element.setAttribute("readonly", "readonly");
                 activity_edit_element.innerText = "Edit";
             }
-        })
-    })
-})
+        });
+
+        activity_remove_element.addEventListener('click', () => {
+            list_element.removeChild(activity_element);
+        });
+    });
+});
