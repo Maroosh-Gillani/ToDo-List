@@ -61,7 +61,7 @@ input, button {
 }
 
 #add-activity-submit:hover {
-   opacity: 0.5
+   opacity: 0.5;
 }
 
 main {
@@ -110,17 +110,17 @@ main {
 }
 
 #tasks .task .actions button:hover {
-   opacity: 0.5
+   opacity: 0.5;
 }
 
 #tasks .task .actions .edit {
-   color: var(--teal)
+   color: var(--teal);
 }
 
 #tasks .task .actions .remove {
-   color: var(--redpink)
+   color: var(--redpink);
 }
 
 #tasks .task .content {
-   flex: 1 1 0%
+   flex: 1 1 0%;
 }
