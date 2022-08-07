@@ -6,6 +6,7 @@
 
     --teal: #38c8e8;
     --redpink: #e83861;
+    --orange: #f2c01b;
  }
 
  * {
@@ -119,6 +120,10 @@ main {
 
 #tasks .task .actions .remove {
    color: var(--redpink);
+}
+
+#tasks .task .actions .completion {
+   color: var(--orange);
 }
 
 #tasks .task .content {
