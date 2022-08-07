@@ -40,8 +40,13 @@ window.addEventListener('load', () => {
         activity_remove_element.classList.add("remove");
         activity_remove_element.innerHTML = "Remove";
 
+        const activity_completion_element = document.createElement("button");
+        activity_completion_element.classList.add("completion");
+        activity_completion_element.innerHTML = "Completed?";
+
         activity_actions_element.appendChild(activity_edit_element);
         activity_actions_element.appendChild(activity_remove_element);
+        activity_actions_element.appendChild(activity_completion_element);
         
         activity_element.appendChild(activity_actions_element);
 
@@ -62,6 +67,14 @@ window.addEventListener('load', () => {
 
         activity_remove_element.addEventListener('click', () => {
             list_element.removeChild(activity_element);
+        });
+
+        activity_completion_element.addEventListener('click', () => {
+            if (activity_completion_element.innerText == "Completed?") {
+                activity_completion_element.innerText = "Good Job!";
+            } else {
+                activity_completion_element.innerText = "Completed?";
+            }
         });
     });
 });
