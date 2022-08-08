@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+    
     const form = document.querySelector("#add-activity-form");
     const input = document.querySelector("#add-activity-input");
     const list_element = document.querySelector("#tasks");
@@ -72,9 +73,10 @@ window.addEventListener('load', () => {
         activity_completion_element.addEventListener('click', () => {
             if (activity_completion_element.innerText == "Completed?") {
                 activity_completion_element.innerText = "Good Job!";
+                activity_completion_element.style.color = '#03fc62';
             } else {
                 activity_completion_element.innerText = "Completed?";
+                activity_completion_element.style.color = '#f2c01b';
             }
         });
     });
-});
